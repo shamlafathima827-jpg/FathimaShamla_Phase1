@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>College registration</title>
-</head>
-<body>
+    <title>College Registration</title> 
+</head> 
+<body>  
     <h1>College Registration Form</h1>
- 
-    <form>
- 
-       <label>Name:</label>
-       <input type="text" name="name" required><br><br>
-   
-       <label>Email:</label>
-       <input type="email" name="email" reqired><br><br>
-         
-       <label>Password:</label>
-       <input type="password" name="password" required maxlength="12"><br><br>
-         
-       <label>Gender:</label>     
-       <input type="radio" name="gender" value="male" required>Male
-       <input type="radio" name="gender" value="female" required>Female<br><br>
+    <form> 
+       <label for="name">Name:</label><br>
+       <input type="text" id="name" name="name" required><br><br> 
+      
+       <label for="email">Email:</label><br> 
+       <input type="email" id="email" name="email" required><br><br>
+       
+       <label for="password">Password:</label><br> 
+       <input type="password" id="password" name="password" required minlength="8"><br><br> 
+       
+       <label for="confirm">Confirm Password:</label><br> 
+       <input type="password" id="confirm" name="confirm" required minlength="8"><br><br> 
+       
+       <label>Gender:</label><br> <input type="radio" id="male" name="gender" value="male" required>
+       <label for="male">Male</label>
+       <input type="radio" id="female" name="gender" value="female" required>
+       <label for="female">Female</label><br><br> 
+      
+       <label>Hobbies:</label><br> 
+       <input type="checkbox" id="reading" name="hobbies" value="reading">
+       <label for="reading">Reading</label> <input type="checkbox" id="coding" name="hobbies" value="coding"> 
+       <label for="coding">Coding</label> <input type="checkbox" id="sports" name="hobbies" value="sports">
+       <label for="sports">Sports</label><br><br> 
+       <input type="submit" value="Register">
 
-       <label>Hobbies:</label>      
-       <input type="checkbox" name="hobbies" value="reading">Reading
-       <input type="checkbox" name="hobbies" value="coding"> Coding
-       <input type="checkbox" name="hobbies" value="sports"> Sports<br><br>   
-
-         <input type="submit" value="Save">
      </form>
 </body>
 </html>
