@@ -1,0 +1,21 @@
+/* CSS syntax: selector { property: value; } *
+/ /* Types of CSS: This is External CSS */ 
+
+body { 
+/* Colors, backgrounds, fonts, text styling */ 
+background-color: #f4f4f4; 
+font-family: Arial, sans-serif;
+color: #333333;
+} 
+
+h1 {
+  
+color: blue;
+text-align: center;
+font-size: 32px;
+
+}
+
+p {
+    font-size: 16px;
+  line-height: 1.5; }
