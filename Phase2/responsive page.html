@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Responsive Design</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+        }
+
+        .header {
+            background-color: #4b0082;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 26px;
+        }
+
+        .wrapper {
+            display: flex;
+        }
+
+        .menu {
+            width: 25%;
+            background-color: #9370db;
+            padding: 20px;
+            color: white;
+        }
+
+        .menu div {
+            margin: 10px 0;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .item {
+            flex: 1;
+            background-color: #e6e6fa;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .item:hover {
+            background-color: #d8bfd8;
+        }
+
+        @media (max-width: 600px) {
+            .wrapper {
+                flex-direction: column;
+            }
+
+            .menu {
+                width: 100%;
+                text-align: center;
+            }
+
+            .content {
+                flex-direction: column;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 900px) {
+            .content {
+                flex-wrap: wrap;
+            }
+
+            .item {
+                flex: 45%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header">My Unique Responsive Page</div>
+
+    <div class="wrapper">
+
+        <div class="menu">
+            <div>Dashboard</div>
+            <div>Profile</div>
+            <div>Settings</div>
+            <div>Logout</div>
+        </div>
+
+        <div class="content">
+            <div class="item">Box A</div>
+            <div class="item">Box B</div>
+            <div class="item">Box C</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

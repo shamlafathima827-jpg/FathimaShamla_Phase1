@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Understanding Margin and Padding</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px;
+    color: #333;
+}
+
+.section {
+    background: #ffffff;
+    border: 2px solid #ccc;
+    margin: 30px;
+    padding: 20px;
+}
+
+.margin-box {
+    background: #4CAF50;
+    color: white;
+    margin: 50px;
+    padding: 15px;
+    border: 3px solid darkgreen;
+    text-align: center;
+}
+
+.padding-box {
+    background: #2196F3;
+    color: white;
+    margin: 10px;
+    padding: 50px;
+    border: 3px solid navy;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    gap: 20px;
+}
+
+.small-pad {
+    background: #ff704d;
+    margin: 40px;
+    padding: 10px;
+    border: 3px solid darkred;
+    color: white;
+    width: 200px;
+}
+
+.big-pad {
+    background: #9c27b0;
+    margin: 10px;
+    padding: 50px;
+    border: 3px solid purple;
+    color: white;
+    width: 200px;
+}
+S
+.outer {
+    background: #ffe082;
+    padding: 40px;
+    border: 3px dashed orange;
+}
+
+.inner {
+    background: #37474f;
+    color: white;
+    margin: 40px;
+    padding: 20px;
+    border: 3px solid black;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1>Margin vs Padding Demo</h1>
+
+<div class="section">
+    <h2>Margin Example</h2>
+    <div class="margin-box">
+        This box has large margin (space outside)
+    </div>
+</div>
+
+<div class="section">
+    <h2>Padding Example</h2>
+    <div class="padding-box">
+        This box has large padding (space inside)
+    </div>
+</div>
+
+<div class="section">
+    <h2>Comparison</h2>
+    <div class="flex">
+        <div class="small-pad">
+            Big Margin<br>Small Padding
+        </div>
+        <div class="big-pad">
+            Small Margin<br>Big Padding
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Nested Boxes</h2>
+    <div class="outer">
+        Outer box (padding area)
+        <div class="inner">
+            Inner box (margin + padding)
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

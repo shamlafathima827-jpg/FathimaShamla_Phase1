@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flexbox Cards</title>
+
+<style>
+body {
+    background-color: #f0f0f0;
+    font-family: Arial;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h3 {
+    margin: 0;
+    color: #333;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.card button {
+    margin-top: 10px;
+    padding: 8px;
+    border: none;
+    background: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background: #45a049;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2 style="text-align:center;">Flexbox Card Layout</h2>
+
+<div class="container">
+
+    <div class="card">
+        <h3>Card 1</h3>
+        <p>This is a simple flexbox card.</p>
+        <button>Click</button>
+    </div>
+
+    <div class="card">
+        <h3>Card 2</h3>
+        <p>Flexbox helps align items easily.</p>
+        <button>Click</button>
+    </div>
+
+    <div class="card">
+        <h3>Card 3</h3>
+        <p>Responsive and clean layout.</p>
+        <button>Click</button>
+    </div>
+
+    <div class="card">
+        <h3>Card 4</h3>
+        <p>Try resizing the screen!</p>
+        <button>Click</button>
+    </div>
+
+</div>
+
+</body>
+</html>
+```
