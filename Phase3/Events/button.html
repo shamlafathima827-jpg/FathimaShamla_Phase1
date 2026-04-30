@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click Action</title>
+</head>
+<body>
+
+<h2 id="msg">Press the button</h2>
+<button id="myBtn">Click Me</button>
+
+<script>
+
+var button = document.getElementById("myBtn");
+
+button.addEventListener("click", function(){
+
+    var heading = document.getElementById("msg");
+    heading.textContent = "Button was clicked!";
+
+});
+
+</script>
+
+</body>
+</html>

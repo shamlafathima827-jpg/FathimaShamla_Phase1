@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Typing Checker</title>
+</head>
+<body>
+
+<h2>Typing Checker</h2>
+
+<input type="text" id="userInput" placeholder="Type something...">
+<br><br>
+
+<p id="display">Waiting for input...</p>
+<p id="count"></p>
+
+<script>
+
+var inputBox = document.getElementById("userInput");
+
+inputBox.addEventListener("input", function(){
+
+    var text = inputBox.value;
+    var show = document.getElementById("display");
+    var count = document.getElementById("count");
+
+    // show uppercase text (different behavior)
+    show.textContent = text.toUpperCase();
+
+    // show character count (extra feature)
+    count.textContent = "Characters: " + text.length;
+
+});
+
+</script>
+
+</body>
+</html>

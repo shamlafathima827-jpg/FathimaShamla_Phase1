@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student List</title>
+
+    <style>
+        body{
+            font-family: Georgia;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        #list div{
+            background-color: lightyellow;
+            margin: 8px;
+            padding: 10px;
+        }
+
+        button{
+            margin: 5px;
+            padding: 8px 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2 id="heading">Student Names</h2>
+
+<div id="list">
+    <div>Rahul</div>
+    <div>Anu</div>
+</div>
+
+<button onclick="changeText()">Change Text</button>
+<button onclick="changeStyle()">Change Style</button>
+<button onclick="addStudent()">Add Student</button>
+<button onclick="removeStudent()">Remove Student</button>
+
+<script>
+
+function changeText(){
+    document.getElementById("heading").innerHTML = "Updated Student List";
+}
+
+function changeStyle(){
+    var items = document.getElementById("list").children;
+
+    for(var i = 0; i < items.length; i++){
+        items[i].style.backgroundColor = "lightgreen";
+    }
+}
+
+function addStudent(){
+    var d = document.createElement("div");
+    d.innerHTML = "New Student";
+
+    document.getElementById("list").appendChild(d);
+}
+
+function removeStudent(){
+    var list = document.getElementById("list");
+
+    if(list.lastElementChild){
+        list.removeChild(list.lastElementChild);
+    }
+}
+
+</script>
+
+</body>
+</html>

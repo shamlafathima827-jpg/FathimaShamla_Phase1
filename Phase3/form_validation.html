@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Portal Access</title>
+</head>
+<body>
+
+<h2>Student Access</h2>
+
+<form id="studentForm">
+    Name: <input type="text" id="name"><br><br>
+    PIN Code: <input type="password" id="pin"><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<p id="msg"></p>
+
+<script>
+
+var form = document.getElementById("studentForm");
+
+form.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    var name = document.getElementById("name").value;
+    var pin = document.getElementById("pin").value;
+    var msg = document.getElementById("msg");
+
+    if(name === ""){
+        msg.textContent = "Name required";
+    }
+    else if(pin === ""){
+        msg.textContent = "Enter PIN";
+    }
+    else if(pin.length < 4){
+        msg.textContent = "PIN too short";
+    }
+    else if(isNaN(pin)){
+        msg.textContent = "Only numbers allowed";
+    }
+    else{
+        msg.textContent = "Access granted";
+    }
+
+});
+
+</script>
+
+</body>
+</html>

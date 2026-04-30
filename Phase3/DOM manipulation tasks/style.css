@@ -1,0 +1,28 @@
+body {
+  font-family: Arial;
+  background: #f0f0f0;
+  text-align: center;
+}
+
+.box {
+  width: 280px;
+  margin: 20px auto;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+}
+
+input {
+  padding: 6px;
+  width: 65%;
+}
+
+button {
+  padding: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+li {
+  margin: 6px;
+}

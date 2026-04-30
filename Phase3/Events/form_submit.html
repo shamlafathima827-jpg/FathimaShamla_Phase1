@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback</title>
+</head>
+<body>
+
+<h2>Give Feedback</h2>
+
+<form id="fbForm">
+    Name: <input type="text" id="name"><br><br>
+    
+    Rating:
+    <select id="rating">
+        <option value="">Select</option>
+        <option>Good</option>
+        <option>Average</option>
+        <option>Bad</option>
+    </select><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<p id="output"></p>
+
+<script>
+
+var form = document.getElementById("fbForm");
+
+form.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    var name = document.getElementById("name").value;
+    var rating = document.getElementById("rating").value;
+    var out = document.getElementById("output");
+
+    if(name === ""){
+        out.innerHTML = "Name missing";
+    }
+    else if(rating === ""){
+        out.innerHTML = "Please choose rating";
+    }
+    else{
+        out.innerHTML = "Thanks for your feedback!";
+    }
+
+});
+
+</script>
+
+</body>
+</html>
